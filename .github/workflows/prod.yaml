@@ -22,10 +22,10 @@ jobs:
       uses: actions/checkout@v2
 
     # Setup Node.js environment
-    - name: Use Node.js 16.x
+    - name: Use Node.js 20.x
       uses: actions/setup-node@v3
       with:
-        node-version: '18'
+        node-version: '20'
 
     # Install dependencies
     - name: Install dependencies
@@ -48,4 +48,4 @@ jobs:
         # Command to install dependencies
         install_command: npm install
         # Command to build static website
-        build_command: npm build
+        build_command: npm run build
